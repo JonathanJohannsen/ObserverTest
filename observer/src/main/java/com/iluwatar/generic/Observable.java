@@ -21,6 +21,10 @@ public abstract class Observable<S extends Observable<S, O, A>, O extends Observ
     public void addObserver(O observer) {
         this.observers.add(observer);
     }
+    
+    public void removeObserver(O observer) {
+        this.observers.remove(observer);
+    }
 
     @SuppressWarnings("unchecked")
     public void notifyObservers(A argument) {
