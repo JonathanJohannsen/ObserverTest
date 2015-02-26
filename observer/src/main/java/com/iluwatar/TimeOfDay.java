@@ -9,12 +9,12 @@ import java.util.List;
  * registering as listener.
  * 
  */
-public class Weather {
+public class TimeOfDay {
 
 	private WeatherType currentWeather;
 	private List<WeatherObserver> observers;
 
-	public Weather() {
+	public TimeOfDay() {
 		observers = new ArrayList<>();
 		currentWeather = WeatherType.SUNNY;
 	}
